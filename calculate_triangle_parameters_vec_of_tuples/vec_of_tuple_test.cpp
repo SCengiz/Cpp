@@ -239,7 +239,8 @@ void tuple_test()
     {
       return std::make_tuple
       (
-        *in_instance,
+//         *in_instance,
+       *in_instance.get(),
         in_instance->compute_area(),
         in_instance->compute_perimeter(),
         in_instance->compute_angle_b(),
